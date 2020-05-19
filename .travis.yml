@@ -3,6 +3,7 @@ before_install:
   - export CHROME_BIN=chromium-browser 
 services:  
   - xvfb script:  
+    - npm cache
     - npm install  
     - npm run test
 node_js:
