@@ -6,6 +6,7 @@ var Calculadora = {
     return num1 + num2;
   },
   subtrair: function (num1, num2) {
+    if (!num1 || !num2) return 0;
     return num1 - num2;
   },
   dividir: function (num1, num2) {
