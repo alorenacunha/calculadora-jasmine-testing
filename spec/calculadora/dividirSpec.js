@@ -16,10 +16,10 @@ describe("Suite de testes de dividir", function () {
   it("deve retornar 3 para os valores -9 e -3 em formato texto", function () {
     expect(Calculadora.dividir("-9", "-3")).toEqual(3);
   });
-  it("deve retornar undefined para os valores 5 e 0", function () {
-    expect(Calculadora.dividir(5, 0)).toEqual(0);
+  it("deve retornar error para os valores 5 e 0", function () {
+    expect(Calculadora.dividir(5, 0)).toEqual("error");
   });
-  it("deve retornar undefined para os valores 0 e 5", function () {
+  it("deve retornar 0 para os valores 0 e 5", function () {
     expect(Calculadora.dividir(0, 5)).toEqual(0);
   });
   it("deve retornar 0 quando número 1 for inválido", function () {
